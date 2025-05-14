@@ -1,2 +1,15 @@
+streamlit
 spacy==3.8.5
+transformers
+torch
+torchvision
+torchaudio
 matplotlib
+keybert
+streamlit-option-menu
+streamlit-extras
+accelerate
+streamlit-lottie
+keyphrase-vectorizers
+ollama
+wordcloud
