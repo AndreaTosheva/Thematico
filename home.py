@@ -9,16 +9,20 @@ st.set_page_config(
 
 n.run(index=0)  # Run navigation logic
 
+st.components.v1.html(
+    """
+<script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+""",
+    height=0,
+)
 
 lottie1_html = """
-<script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
 <div style="display: flex; justify-content: flex-start; margin-left: 80px; margin-top: 40px;">
 <dotlottie-player
   src="https://lottie.host/16058c46-29ad-4e93-af1c-e048c6ee3747/16zwet7YE6.lottie"
   background="transparent"
   speed="1"
-  style="width: 300px;
-  height: 300px"
+  style="width: 300px; height: 300px"
   loop
   autoplay>
 </dotlottie-player>
@@ -26,15 +30,12 @@ lottie1_html = """
 """
 
 lottie2_html = """
-<script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
 <div style="display: flex; justify-content: flex-start; margin-left: 60px; margin-top: 20px;">
 <dotlottie-player
   src="https://lottie.host/ca5d40d4-16f6-49f8-8f07-297c03320540/pNRrAWPpdQ.lottie"
   background="transparent"
   speed="1"
-  style="width: 100%;
-  max-width: 300px;
-  height: 300px"
+  style="width: 100%; max-width: 300px; height: 300px"
   loop
   autoplay>
 </dotlottie-player>
@@ -42,15 +43,12 @@ lottie2_html = """
 """
 
 lottie3_html = """
-<script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
 <div style="display: flex; justify-content: flex-start; margin-left: 80px; margin-top: 20px;">
 <dotlottie-player
   src="https://lottie.host/c538a723-de78-427d-8e11-1c6a80d9a8ab/Vs61qWxcW3.lottie"
   background="transparent"
   speed="1"
-  style="width: 100%;
-  max-width: 300px;
-  height: 300px"
+  style="width: 100%; max-width: 300px; height: 300px"
   loop
   autoplay>
 </dotlottie-player>
