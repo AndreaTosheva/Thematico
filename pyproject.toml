@@ -21,6 +21,8 @@ streamlit-lottie = "^0.0.5"
 keyphrase-vectorizers = "^0.0.13"
 ollama = "^0.4.8"
 wordcloud = "^1.9.4"
+spacy = "^3.8.5"
+en-core-web-sm = {url = "https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0.tar.gz"}
 
 
 [build-system]
