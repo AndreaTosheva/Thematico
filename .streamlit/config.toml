@@ -1,0 +1,10 @@
+[server]
+enableStaticServing = true
+
+[client]
+showErrorDetails = false
+showSidebarNavigation = false
+
+[ui]
+hideTopBar = true
+hideSidebarNav = true
