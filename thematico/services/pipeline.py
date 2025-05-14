@@ -1,9 +1,8 @@
 import torch
 import json
 import pandas as pd
-import sys
-import io
-import re
+import spacy
+from spacy.cli import download
 import logging
 from pydantic import BaseModel, ConfigDict, Field, field_validator
 
@@ -126,6 +125,11 @@ class ModelWrapper:
         self.models = {}
 
     def _load_analysis_models(self):
+        try:
+            spacy.load("en_core_web_sm")
+        except OSError:
+            download("en_core_web_sm")
+            spacy.load("en_core_web_sm")
         # Keyword extractor
         if "bert_model" not in self.models:
             if "bert_embedder" not in self.models:
