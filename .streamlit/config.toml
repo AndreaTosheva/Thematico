@@ -5,6 +5,6 @@ enableStaticServing = true
 showErrorDetails = false
 showSidebarNavigation = false
 
-[ui]
+
 hideTopBar = true
 hideSidebarNav = true
